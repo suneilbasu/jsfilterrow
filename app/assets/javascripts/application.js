@@ -14,9 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-var className = $("#myselector").val();
-$("td."+className).hide()
-
-function toggle(displayState){
-  var element = document.getElementsByClassName('')
-}
