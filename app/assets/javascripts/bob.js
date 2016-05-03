@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $("button").click(function(){
-
-    $(".pending").toggle();
+  $('select').on('change',function(){
+  var className =$("#myselector").val();
+    $("tr."+className).toggle();
   });
 });
