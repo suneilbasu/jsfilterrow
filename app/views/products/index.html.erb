@@ -1,0 +1,19 @@
+<h1>Products#index</h1>
+<p>Find me in app/views/products/index.html.erb</p>
+<button id="myselector" value="inactive">Inactive</button>
+<button id="myselector" value="pending">Pending</button>
+
+<table>
+  <th> name </th>
+  <th> location </th>
+  <th> status </th>
+  <th> buttonz </th>
+    <%@products.each do |n| %>
+      <tr class = "<%= n.status %>">
+        <td><%= n.name %></td>
+        <td ><%= n.location %></td>
+        <td ><%= n.status%></td>
+        <td><button></button></td>
+      </tr>
+    <% end %>
+  </table>
